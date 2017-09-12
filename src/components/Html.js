@@ -7,7 +7,7 @@ export default function Html({ markup }) {
         <head>
             <link rel='stylesheet' href='/assets/bundle.css' type="text/css" />
         </head>
-        <body>
+        <body style={{ margin: '0px' }} >
         <div id="main-app" dangerouslySetInnerHTML={{ __html: markup }} />
         <script src="/assets/bundle.js" />
         </body>

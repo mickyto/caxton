@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 
 import Html from './components/Html';
-import App from './components/App';
+import App from './components/app/App';
 
 export default function middleware(req, res) {
   const markup = ReactDOMServer.renderToString(
