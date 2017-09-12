@@ -6,5 +6,12 @@
   position: absolute;
   h1 {
     padding: 20px;
+    margin: 0;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  h1:hover {
+    background: #3e5982;
   }
 }

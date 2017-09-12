@@ -1,0 +1,48 @@
+{
+  "departments": [
+    {
+      "id": 1,
+      "name": "Secretariat"
+    },
+    {
+      "id": 2,
+      "name": "Chancery"
+    },
+    {
+      "id": 3,
+      "name": "Security Service"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Michail",
+      "lastName": "Jackson",
+      "departmentId": 2
+    },
+    {
+      "id": 2,
+      "firstName": "Toni",
+      "lastName": "Braxton",
+      "departmentId": 1
+    },
+    {
+      "id": 3,
+      "firstName": "Bill",
+      "lastName": "Murray",
+      "departmentId": 3
+    },
+    {
+      "id": 4,
+      "firstName": "Jennifer",
+      "lastName": "Aniston",
+      "departmentId": 2
+    },
+    {
+      "id": 5,
+      "firstName": "Bred",
+      "lastName": "Pitt",
+      "departmentId": 1
+    }
+  ]
+}

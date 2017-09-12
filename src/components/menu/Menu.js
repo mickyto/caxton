@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 if(process.env.WEBPACK) require('./Menu.scss');
 
 class App extends Component {
-    
+
+    componentWillMount() {
+        
+    }
+
     render() {
         return (
             <div className="menu">
-                <h1>Hello World</h1>
+                {this.props.models.map(model => (
+                    <h1 key={model} onClick={() => this.props.handleContent(model)}>{model}</h1>
+                ))}
             </div>
         );
     }

@@ -7,16 +7,6 @@ router.render = function (req, res) {
 
     var db = res.locals.data;
 
-    if (db.length === 0) {
-        res.status(400);
-        res.jsonp({
-            error: {
-                error_msg: '(#3) User not found'
-            }
-        });
-        return;
-    }
-
     if (req.method === 'POST') {
 
         if (req.body.name === null && req.body.i18n === null) {
@@ -58,6 +48,6 @@ router.render = function (req, res) {
 
 server.use(middlewares);
 server.use(router);
-server.listen(3000, function () {
-    console.log('JSON Server is running on port 3000')
+server.listen(3001, function () {
+    console.log('JSON Server is running on port 3001')
 });
