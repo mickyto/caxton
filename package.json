@@ -6,6 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node app.js",
+    "mock": "node dataServer.js &",
     "build": "webpack"
   },
   "dependencies": {
