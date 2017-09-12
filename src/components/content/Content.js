@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Departures from '../departures/Departures';
+import Departments from '../departments/Departments';
 if(process.env.WEBPACK) require('./Content.scss');
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
                 {this.props.data ?
                     <div>
                         {this.props.model == 'departments' &&
-                            <Departures data={this.props.data} />
+                            <Departments data={this.props.data} />
                         }
                         {this.props.model == 'employees' &&
                         <div>

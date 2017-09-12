@@ -1,0 +1,31 @@
+.departments {
+
+  form {
+    text-align: center;
+  }
+  input {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    color: #173666;
+    border: 2px solid #173666;
+  }
+
+  button {
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+    background: #173666;
+    border: 2px solid #173666;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+
+  button:hover {
+    background: #fff;
+    color: #173666;
+  }
+}
