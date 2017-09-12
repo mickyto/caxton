@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Departments from '../departments/Departments';
+import Employees from '../employees/Employees';
 if(process.env.WEBPACK) require('./Content.scss');
 
 class App extends Component {
@@ -13,11 +14,7 @@ class App extends Component {
                             <Departments data={this.props.data} />
                         }
                         {this.props.model == 'employees' &&
-                        <div>
-                            {this.props.data.map(value => (
-                                <h1 key={value.id}>{value.firstName}</h1>
-                            ))}
-                        </div>
+                            <Employees data={this.props.data} />
                         }
                     </div>
                     :

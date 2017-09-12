@@ -34,18 +34,18 @@ class Departments extends Component {
         departments[i].name = e.target.value;
 
         this.setState({
-            departments: departments
+            departments
         })
     }
 
     render() {
         console.log(this.state.departments)
         return (
-            <div className="departments">
+            <div className="form">
                 {this.state.departments.map((value, i) => (
-                    <form onSubmit={(e) => this.handleSubmit(i, e)}>
-                        <input key={i} onChange={(e) => this.handleInputs(i, e)} value={value.name} />
-                        <button>Сохранить</button>
+                    <form key={i} onSubmit={(e) => this.handleSubmit(i, e)}>
+                        <input onChange={(e) => this.handleInputs(i, e)} value={value.name} />
+                        <button>Save</button>
                     </form>
                 ))}
             </div>
